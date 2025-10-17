@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Jorge Bravo">
         <meta name="keywords" content="Jorge Bravo, CV, curriculum, skills, ESPOL">
+        <meta name="description" content="Curriculum Vitae de Jorge Bravo, estudiante de Ingeniería en Computación en ESPOL.">
         <title>CV - Jorge Bravo</title>
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="img/icon" href="assets/img/icon.png">
@@ -18,10 +19,11 @@
                             <h3>Jorge Bravo</h3>
                         </section>
                         <li><a href="#sobre-mi">Sobre mi</a></li>
-                        <li><a href="#">Formación y Experiencia</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Testimonios</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#formacion-experiencia">Formación y Experiencia</a></li>
+                        <li><a href="#aptitudes-idiomas">Aptitudes e idiomas</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <article id="bienvenida-texto">
@@ -36,16 +38,16 @@
                 <p>Estudiante de Ingeniería en <br>
                     Computación - ESPOL</p>
                 <address>
-                    <p>joranbra@espol.edu.ec</p>
-                    <p>Tel: +593988086125</p>
+                    <a href="mailto:joranbra@espol.edu.ec"><p>joranbra@espol.edu.ec</p></a>
+                    <p>Tel: +593 988086125</p>
                 </address>
 
                 <ul id="redes-sociales-tarjeta">
-                    <li><a><img src="assets/img/linkedin.png"></a></li>
-                    <li><a><img src="assets/img/github.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jorge-bravo-vidal" target="_blank"><img src="assets/img/linkedin.png"></a></li>
+                    <li><a href="https://github.com/Reload2704" target="_blank"><img src="assets/img/github.png"></a></li>
                 </ul>
 
-                <a id="boton-cv" href="assets/docs/cv-jorge-bravo.pdf">Descargar CV</a>
+                <a id="boton-cv" href="assets/docs/cv-jorge-bravo.pdf" download="cv-jorge-bravo.pdf">Descargar CV</a>
             </aside>
         </header>
 
@@ -93,6 +95,113 @@
                     </article>
                 </section>
             </section>
+            <section id="aptitudes-idiomas">
+                <h2>Aptitudes e Idiomas</h2>
+                <article class="item-aptitud">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>R</li>
+                        <li>Git/Github</li>
+                        <li>MySQL</li>
+                        <li>Pandas</li>
+                    </ul>
+                </article>
+                <article class="item-aptitud">
+                    <h3>Habilidades Blandas</h3>
+                    <ul>
+                        <li>Comunicación asertiva</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Pensamiento crítico</li>
+                        <li>Escucha Activa</li>
+                        <li>Liderazgo</li>
+                        <li>Adaptabilidad</li>
+                    </ul>
+                </article>
+                <article class="item-aptitud">
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Español - Nativo</li>
+                        <li>Inglés - Intermedio (B1)</li>
+                    </ul>
+                </article>
+            </section>
+            <section id="proyectos">
+                <h2>Proyectos Destacados</h2>
+                <article class="item-proyecto">
+                    <h3>Juego UNO</h3>
+                    <p>Replica del Juego UNO como proyecto de POO con aplicación de FireBase para permitir jugarlo en línea.</p>
+                    <p><b>Tecnologías:</b> Java, FireBase</p>
+                    <a class="boton-repo" href="https://github.com/Reload2704/UNO-GameProject" target="_blank">Ver Repositorio</a>
+                </article>
+                <article class="item-proyecto">
+                    <h3>Juego Blackjack</h3>
+                    <p>Juego blackjack desarrollado en ensamblador con la herramienta MIPS para Organización de Computadores.</p>
+                    <p><b>Tecnologías:</b> Ensamblador</p>
+                    <a class="boton-repo" href="https://github.com/Jaesparz/ProyectoORG" target="_blank">Ver Repositorio</a>
+                </article>
+                <article class="item-proyecto">
+                    <h3>Detectabilidad de aves costeras ecuatorianas</h3>
+                    <p>Este proyecto de estadística analiza las relaciones morfo-acústicas y su efecto en la detectabilidad de aves costeras ecuatorianas.</p>
+                    <p><b>Tecnologías:</b> R, RStudio</p>
+                    <a class="boton-repo" href="https://github.com/carlagutierrezc/Detectabilidad-de-aves-costeras-ecuatorianas" target="_blank">Ver Repositorio</a>
+                </article>
+            </section>
+            <section id="testimonios">
+                <h2>Testimonios</h2>
+                <article class="item-testimonio">
+                    <p>"Jorge es un estudiante dedicado y apasionado por la programación. Siempre busca aprender y mejorar sus habilidades."</p>
+                    <h4>- Profesor Juan Pérez, ESPOL</h4>
+                </article>
+                <article class="item-testimonio">
+                    <p>"Durante su pasantía, Jorge demostró ser un desarrollador web talentoso y comprometido con su trabajo."</p>
+                    <h4>- María Gómez, Unidad Educativa San Luis Rey De Francia</h4>
+                </article>
+            </section>
+            <section id="contacto">
+                <form id="formulario-contacto">
+                    <h2>Contacto</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                    <option value="">-- Seleccione --</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="colaboracion">Propuesta de Proyecto</option>
+                    <option value="empleo">Oferta de trabajo</option>
+                    <option value="error">Sugerencias</option>
+                    <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <section id="informacion-alterna">
+                    <section id="informacion-alterna-derecha">
+                        <h3>Información de Contacto</h3>
+                        <p>Email: <a href="mailto:joranbra@espol.edu.ec">joranbra@espol.edu.ec</a></p>
+                        <p>Teléfono: +593 988086125</p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/jorge-bravo-vidal" target="_blank">@Jorge-Bravo-Vidal</a></p>
+                        <p>GitHub: <a href="https://github.com/Reload2704" target="_blank">@Reload2704</a></p>
+                    </section>
+                    <section id="informacion-alterna-izquierda">
+                        <h3>Ubicación</h3>
+                        <p>Guayaquil, Ecuador</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1234567890123!2d-79.12345678901234!3d-2.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d1234567890ab%3A0xcdef1234567890ab!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1611234567890!5m2!1ses!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+            </section>
         </main>
+        <footer>
+            <p>&copy; 2025 Jorge Bravo. Todos los derechos reservados.</p>
+        </footer>
     </body>
 </html>
