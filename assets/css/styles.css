@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+nav > ul > section#nav-left {
+    margin-right: auto;
+}
+nav{
+    background-color: #566adc;
+    padding: 1.5em;
+    color: white;
+    font-style: italic;
+}
+nav a {
+    font-size: 1.1rem;
+}
+nav a:hover {
+    color: rgb(221, 221, 221);
+    transition: color 0.2s ease;
+}
+#nav-logo {
+    margin-right: auto; /* Empuja el nombre a la izquierda */
+    font-size: 1.2rem;
+}
+#bienvenida-dividida{
+    display: flex;
+    height: 100vh;
+}
+#bienvenida-principal{
+    flex: 2;
+    background-image: linear-gradient(rgba(77, 88, 148, 0.80), rgba(0, 0, 0, 1)), url(../img/fondo-bienvenida.jpg);
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 15em;
+}
+#bienvenida-texto{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+#bienvenida-texto p { 
+    font-size: 1.2rem; 
+    letter-spacing: 3px; 
+}
+#bienvenida-texto h1 { 
+    font-size: 4rem; 
+    margin: 0; 
+}
+#bienvenida-texto h2 { 
+    font-size: 1.2rem; 
+    font-weight: 400;
+    padding-top: 1em;
+    font-style: italic;
+}
+
+#tarjeta-resumen {
+    flex: 1;
+    background-color: #566adc;
+    color: white;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#foto-perfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+#tarjeta-resumen h2 { 
+    font-size: 1.8rem; 
+}
+#tarjeta-resumen address { 
+    font-style: normal; 
+    margin: 1.5rem 0; 
+}
+#redes-sociales-tarjeta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+#redes-sociales-tarjeta img { 
+    width: 24px; 
+}
+#boton-cv {
+    background-color: white;
+    color: #6A67CE;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#boton-cv:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.2s ease;
+}
