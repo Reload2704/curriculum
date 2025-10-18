@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 * {
   margin: 0;
@@ -74,11 +75,11 @@ nav a:hover {
     font-size: 1.2rem; 
     letter-spacing: 3px; 
 }
-#bienvenida-texto h1 { 
+#bienvenida-texto h2 { 
     font-size: 4rem; 
     margin: 0; 
 }
-#bienvenida-texto h2 { 
+#bienvenida-texto h3 { 
     font-size: 1.2rem; 
     font-weight: 400;
     padding-top: 1em;
@@ -130,4 +131,28 @@ nav a:hover {
 #boton-cv:hover {
     background-color: #e0e0e0;
     transition: background-color 0.2s ease;
+}
+
+#sobre-mi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 6rem 10%;
+    background-color: #5569dc1a;
+    gap: 4rem;
+}
+#sobre-mi-titulo {
+    font-size: 3rem;
+    color: #6A67CE;
+    padding-bottom: 2rem;
+    font-family: "Cookie", cursive;
+}
+#sobre-mi-parrafo {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+#sobre-mi-video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
