@@ -159,51 +159,59 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#formacion-experiencia {
-    display: flex;
-    flex-direction: column;
+
+#curriculum-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
     padding: 3rem 10%;
-    gap: 3rem;
+    gap: 3rem 6rem; 
     background-color: #0000;
 }
-#formacion-experiencia-titulo {
-    font-size: 2rem;
-    color: #6A67CE;
-    padding-bottom: 0.5rem;
-    font-family: "Delius", cursive;
-    font-style: italic;
-    text-align: center;
-}
-#formacion-experiencia-contenido {
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
-    justify-content: center;
-}
-#formacion-experiencia h2{
+
+#curriculum-grid h2 {
     font-size: 1.5rem;
     color: #566adc;
     font-family: "Delius", cursive;
     font-style: italic;
     margin-bottom: 2.5rem;
 }
-.item-formacion, .item-experiencia {
+
+.item-formacion, .item-experiencia, .item-aptitud {
     margin-bottom: 2rem;
 }
-.item-formacion h3, .item-experiencia h3 {
+
+.item-formacion h3, .item-experiencia h3, .item-aptitud h3 {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 0.3rem;
 }
+
+#idiomas h3 {
+    min-height: 1.2rem;
+}
+
 .item-formacion h4, .item-experiencia h4 {
     font-size: 1rem;
     color: #666;
     margin-bottom: 0.5rem;
     font-style: italic;
 }
+
 .item-formacion p, .item-experiencia p {
     font-size: 1rem;
     color: #444;
     line-height: 1.5;
-    text-align: justify;
+}
+
+.item-aptitud ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-aptitud ul li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 0.3rem;
 }
